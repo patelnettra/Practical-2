@@ -1,0 +1,519 @@
+/* =========================================
+   GLOBAL STYLES
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    background-color: #102a43;
+    color: white;
+
+    padding: 20px 8%;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    font-size: 14px;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 8px 12px;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #102a43;
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+    min-height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #102a43,
+        #2f80ed
+    );
+
+    color: white;
+
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.btn {
+    background-color: #ffffff;
+    color: #102a43;
+
+    border: none;
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   COMMON SECTION
+   ========================================= */
+
+.section {
+    padding: 70px 8%;
+}
+
+.section > h2 {
+    text-align: center;
+    font-size: 32px;
+
+    color: #102a43;
+
+    margin-bottom: 30px;
+}
+
+.intro {
+    max-width: 800px;
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   ABOUT SECTION - CSS GRID
+   ========================================= */
+
+.about-grid {
+
+    margin-top: 40px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2f80ed;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   PROGRAM SECTION
+   ========================================= */
+
+.programs-section {
+    background-color: #eaf2f8;
+}
+
+.program-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.program-card {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-left: 5px solid #2f80ed;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.program-card h3 {
+    color: #102a43;
+
+    margin-bottom: 10px;
+}
+
+.program-card p {
+    margin-bottom: 15px;
+}
+
+.program-card a {
+    color: #2f80ed;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.program-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FACULTY
+   ========================================= */
+
+.faculty-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.faculty-card {
+
+    text-align: center;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-icon {
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+.faculty-card h3 {
+    color: #102a43;
+}
+
+.faculty-card p {
+    color: #2f80ed;
+    font-weight: bold;
+}
+
+.faculty-card span {
+    color: #666;
+}
+
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact-section {
+    background-color: #eaf2f8;
+}
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 40px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.contact-info {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+.contact-info h3 {
+    color: #102a43;
+
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.contact-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    outline: none;
+
+    border-color: #2f80ed;
+
+    box-shadow:
+        0 0 5px rgba(47, 128, 237, 0.3);
+}
+
+.contact-form .btn {
+
+    background-color: #102a43;
+
+    color: white;
+}
+
+.contact-form .btn:hover {
+    background-color: #2f80ed;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+
+    background-color: #102a43;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =========================================
+   CSS SPECIFICITY DEMONSTRATION
+   ========================================= */
+
+/* Element selector */
+p {
+    color: #333;
+}
+
+/* Class selector has higher specificity */
+.intro {
+    color: #444;
+}
+
+/* ID selector has higher specificity */
+#about .intro {
+    color: #333;
+}
+
+
+/* =========================================
+   MEDIA QUERY - TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .about-grid,
+    .faculty-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MEDIA QUERY - MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        justify-content: center;
+
+        gap: 8px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+
+    .section > h2 {
+        font-size: 27px;
+    }
+
+
+    /* Grid becomes one column */
+
+    .about-grid,
+    .program-grid,
+    .faculty-grid,
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+}
